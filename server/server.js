@@ -30,7 +30,7 @@ app.use(
   })
 );
 
-app.use("/user", users);
+app.use("/api/user", users);
 
 // start the Express server
 app.listen(PORT, () => {

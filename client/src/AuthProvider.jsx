@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const checkSession = useCallback(async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5050/user/check-session", {
+      const res = await fetch("http://localhost:5050/api/user/check-session", {
         credentials: "include",
       });
 
@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const res = await fetch("http://localhost:5050/user/login", {
+      const res = await fetch("http://localhost:5050/api/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
   const logout = async () => {
     setLoading(true);
     try {
-      await fetch("http://localhost:5050/user/logout", {
+      await fetch("http://localhost:5050/api/user/logout", {
         method: "POST",
         credentials: "include",
       });
