@@ -9,8 +9,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/create-account" element={<CreateAccountPage />} />
+        <Route path="/accounts/login" element={<LoginPage />} />
+        <Route path="/accounts/create-account" element={<CreateAccountPage />} />
         <Route path="/home" element={<ProtectedHomePage />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>

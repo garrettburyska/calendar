@@ -1,14 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import ProtectedRoute from "../ProtectedRoute";
 import { useAuth } from "../AuthContext";
 
 function HomePage() {
-  const navigate = useNavigate();
   const { logout, user } = useAuth();
 
   const handleLogout = async () => {
     await logout();
-    navigate("/login");
   };
 
   return (

@@ -67,7 +67,7 @@ function LoginPage() {
         >
           Sign In
         </button>
-        <a className="flex justify-center text-sm mt-4 underline hover:no-underline hover:cursor-pointer text-[#20A4F3]" onClick={() => navigate("/create-account")}>Create account</a>
+        <a className="flex justify-center text-sm mt-4 underline hover:no-underline hover:cursor-pointer text-[#20A4F3]" onClick={() => navigate("/accounts/create-account")}>Create account</a>
       </div>
     </div>
   );

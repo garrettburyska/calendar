@@ -32,7 +32,7 @@ function CreateAccountPage() {
                 console.error(errorData.message);
                 setBadEntry(errorData.message);
             } else {
-                navigate("/login");
+                navigate("/accounts/login");
             }
         }
     };
